@@ -334,7 +334,7 @@ def binary_to_variable(min_sum_bin, max_char):
 def print_output(min_sum_var, min_sum_bin, min_sum_dec, essential_prime_implicants):
     size = len(min_sum_bin)
     print(
-        f"Essential prime implicants using Method 2: [ {str(essential_prime_implicants[0]).replace('+',',')} ]"
+        f"Essential prime implicants: [ {str(essential_prime_implicants[0]).replace('+',',')} ]"
     )
     print("\n\n\n---All Possible terms after simplification---")
 
@@ -500,9 +500,9 @@ def main():
     essential_prime_implicants_alt = binary_to_variable(
         [essential_prime_implicants_alt], max_char
     )
-    print(
-        f"Essential Prime implicants using Method 1: {essential_prime_implicants_alt[0]}"
-    )
+    # print(
+    #     f"Essential Prime implicants using Method 1: {essential_prime_implicants_alt[0]}"
+    # )
 
     essential_prime_implicants = essential_prime_implicants_finder(
         prime_implicants_binary, prime_implicants_decimal, min_sum_bin
